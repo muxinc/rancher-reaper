@@ -13,7 +13,8 @@ class RancherAwsHostReaper
     @interval_secs = interval_secs
     @hosts_per_page = hosts_per_page
     @dry_run = dry_run
-    @logger = Logger.new(STDOUT)
+    $stdout.sync = true
+    @logger = Logger.new($stdout)
     @rancher_api = RancherApi.new
   end
 

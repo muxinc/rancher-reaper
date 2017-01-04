@@ -4,7 +4,8 @@ require 'thin'
 require_relative 'reaper'
 
 Thin::Logging.silent = true
-logger = Logger.new(STDOUT)
+$stdout.sync = true
+logger = Logger.new($stdout)
 
 def verify_environment_variable_set(var_name)
   if !ENV[var_name]
