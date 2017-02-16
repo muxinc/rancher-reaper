@@ -1,8 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    aws-sdk (2.6.3)
-      aws-sdk-resources (= 2.6.3)
+    aws-sdk (2.7.9)
+      aws-sdk-resources (= 2.7.9)
     aws-sdk-core (2.6.3)
       jmespath (~> 1.0)
     aws-sdk-resources (2.6.3)
@@ -35,7 +35,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  aws-sdk (~> 2.6)
+  aws-sdk (~> 2.7)
   hashie (~> 3.4.6)
   rspec (~> 3.5.0)
   thin (~> 1.7)
